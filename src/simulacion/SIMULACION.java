@@ -16,9 +16,9 @@ public class SIMULACION {
         //Así mismo un contador y la variable a despejar xn1. 
         int contador = 0; int xn1 = 0;
         
-        try (/*Inicialización de el metodo Scanner para permitir la entrada de datos 
+        /*Inicialización de el metodo Scanner para permitir la entrada de datos 
                 por el usuario.*/
-        Scanner scanner = new Scanner(System.in)) {
+        Scanner scanner = new Scanner(System.in) ;
             //Se inicia el ciclo 1
             for (int i = 0; i < 10; i++) {
                 
@@ -48,12 +48,13 @@ public class SIMULACION {
                     if (xn1==semilla) {
                         contador++;  
                     }
-                    System.out.println(j + " " + xn1);
+                    System.out.println(xn1);
                     
                     /*Se verifica que los numeros tienen la caracteristica de periodo completo,
                     si el contador tiene el valor de 1, nos hace saber que la semilla solo se repitió 
                     una sola vez con lo cual son periodo completo, de lo contrario no lo son.
                     */
+                    }//Termina el ciclo 2
                     
                     if (contador==1) {
                         System.out.println("El conjunto: " + i + "("+" a: " + a + " m: " + m + " xn: " + xn + ")");
@@ -64,11 +65,11 @@ public class SIMULACION {
                     }
                     //Se reinicia el contador para una nueva corrida
                     contador = 0;
-                }//Termina el ciclo 2
+                
                 
                 
             }//Termina el ciclo 1
-        }
+        
         
     }//Termina el programa 
     
