@@ -3,6 +3,9 @@
 		{
 			"name": "SIMULACION",
 			"path": "../.."
+		},
+		{
+			"path": "../../../Documents/scripts-simulacion-master"
 		}
 	],
 	"settings": {
