@@ -26,10 +26,11 @@ public class SIMULACION {
                 System.out.println("Conjunto : " + i);
                 System.out.println("Introduce la semilla (xn):");
                 xn = scanner.nextInt();
-                System.out.println("Introduce el modulo (m):");
-                m = scanner.nextInt();
                 System.out.println("Introduce la constante multiplicativa (a):");
                 a = scanner.nextInt();
+                System.out.println("Introduce el modulo (m):");
+                m = scanner.nextInt();
+                
                 
                 /*Se guarda la semilla primeramente ingresada por el usuario
                 a otra variable con el fin de poderla usar en la etapa de verificación
