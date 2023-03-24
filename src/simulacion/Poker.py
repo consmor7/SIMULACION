@@ -6,7 +6,7 @@ IMPRIMIR = (entrada == 'Y' or entrada == 'y')
 
 # Leyendo números
 numeros = []
-ruta = "C:\generador\Conjunto 15.txt"
+ruta = "C:/Users/Angel/Documents/GitHub/SIMULACION/números aleatorios/muestras(64) UNIFORMIDAD/10.txt"
 # ruta = "numeros-poker-2.txt"
 with open(ruta, "r") as archivo:
     for linea in archivo:

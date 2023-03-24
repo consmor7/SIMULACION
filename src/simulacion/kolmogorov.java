@@ -16,7 +16,7 @@ public class kolmogorov {
         /*Aqui se ingresan los números mediante un archivo txt 
         y estos son guardados en un arreglo.*/
   
-        float[]array= readFiles("C:/Users/Angel/Documents/GitHub/SIMULACION/números aleatorios/muestras(10)/10.txt");
+        float[]array= readFiles("C:/Users/Angel/Documents/GitHub/SIMULACION/números aleatorios/muestras(10)/5.txt");
         System.out.println("NUMEROS INGRESADOS:");
         System.out.println(Arrays.toString(array));
         
