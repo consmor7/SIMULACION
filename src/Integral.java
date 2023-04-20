@@ -49,7 +49,7 @@ public class Integral {
         int bajolacurva = 0;
         for (int i = 0; i < condicional.length; i++) {
         if (condicional[i] > 0.000000) {
-        bajolacurva++;
+        bajolacurva++;  
          }
         }
         System.out.println("El total de números para calcular la integral son: " + bajolacurva);
