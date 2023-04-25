@@ -12,7 +12,7 @@ public class exponencial {
     public static void main(String[] args) {
          // Importar los números aleatorios del archivo de texto
          double[] array = readFiles("numeros4.txt");
-         double exponencial=1;
+         double exponencial=0;
         int minuto = 1;
         //Generar variable aleatoria exponencial
         for (int i = 0; i <=100; i++) {

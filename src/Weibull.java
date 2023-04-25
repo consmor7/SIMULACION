@@ -22,7 +22,7 @@ public class Weibull {
         if (numeros != null) {
             //Calcular la variable aleatoria Weibull 
             for (int i = 0; i<=100; i++) {
-               Weibull=(float) (alpha * Math.pow(-Math.log(1 - numeros[i]), 1/beta));
+               Weibull=(float) (beta * Math.pow(-Math.log(1 - numeros[i]), 1/alpha));
                System.out.println(Weibull);
             }
             //De lo contrario no se genera 

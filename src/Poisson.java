@@ -10,12 +10,6 @@ public class Poisson {
         int  lambda = 40;
         int[] variables = new int[numeros.length];
 
-       for (int i = 0; i < numeros.length; i++) {
-
-       
-
-
-        
-       }
+      
     }
 }

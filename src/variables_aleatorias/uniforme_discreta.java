@@ -9,7 +9,7 @@ public class uniforme_discreta {
     public static void main(String[] args) {
      // Genera un número aleatorio uniforme U en el intervalo (0,1]
      double[] array = readFiles("numeros4.txt");
-     double uniforme_discreta;
+     int uniforme_discreta;
      /*a y b son los límites inferior 
      y superior de la distribución uniforme discreta*/
      int a=1 ; int b=5;
