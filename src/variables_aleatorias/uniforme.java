@@ -15,7 +15,7 @@ public class uniforme {
     
      
 
-     for (int i = 0; i < array.length; i++) {
+     for (int i = 0; i <=100; i++) {
        
         uniforme=a+(b-a)*array[i];
         System.out.println(uniforme);

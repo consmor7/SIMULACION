@@ -4,26 +4,27 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class exponencial {
-    
-    /**
-     * @param args
-     */
+
+public class uniforme_discreta {
     public static void main(String[] args) {
-         // Importar los números aleatorios del archivo de texto
-         double[] array = readFiles("numeros4.txt");
-         double exponencial=1;
-        int minuto = 1;
-        //Generar variable aleatoria exponencial
-        for (int i = 0; i <=100; i++) {
-            exponencial= -minuto*Math.log(1-array[i]) ;
-            System.out.println(exponencial);
-        }
+     // Genera un número aleatorio uniforme U en el intervalo (0,1]
+     double[] array = readFiles("numeros4.txt");
+     double uniforme_discreta;
+     /*a y b son los límites inferior 
+     y superior de la distribución uniforme discreta*/
+     int a=1 ; int b=5;
+    
+     
 
+     for (int i = 0; i <= 100; i++) {
+        uniforme_discreta = (int)Math.floor(a+array[i]*(b-a+1));
+        System.out.println(uniforme_discreta);
     }
+    }
+    
 
-    // Función para importar los números aleatorios desde un archivo de texto
-    public static double[] readFiles(String file) {
+     // Función para importar los números aleatorios desde un archivo de texto
+     public static double[] readFiles(String file) {
         try {
             File f = new File(file);
             Scanner s = new Scanner(f);
@@ -43,4 +44,5 @@ public class exponencial {
             return null;
         }
     }
+    
 }
