@@ -1,3 +1,5 @@
+package variables_aleatorias;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
