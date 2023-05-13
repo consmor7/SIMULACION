@@ -1,3 +1,6 @@
+
+import variables_aleatorias.LectorArchivo;
+
 public class Weibull {
     /**
      * @param args

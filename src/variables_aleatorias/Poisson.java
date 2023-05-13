@@ -8,7 +8,7 @@ public class Poisson {
     public static void main(String[] args) {
         
         // Generar un número aleatorio uniforme U en el intervalo (0,1).
-        String rutaArchivo = "numeros6.txt";
+        String rutaArchivo = "numeros4.txt";
         LectorArchivo lector = new LectorArchivo(rutaArchivo);
         float[] numeros = lector.leerNumeros();
 
@@ -32,7 +32,7 @@ public class Poisson {
         //Formula a usar 
         ti = (float) (to - (1.0/40.0) * Math.log(numeros[i]));
         //Imprimir ti para ver el comportamiento
-        System.out.println(ti);
+       System.out.println("numero aleatorio usado:   "+numeros[i]+"  valor ti: "+ti);
         //Si ti es menor que 1 entonces le pasa el valor a to y la variable aleatoria aumenta un valor.
         if (ti <= limite) {
             to = ti;
@@ -51,6 +51,7 @@ public class Poisson {
     }
     //Imprime la variable Poisson.
     System.out.println("Variable poisson "+ (k+1) + ": "+ poisson);
+           // System.out.println(poisson);
 }
 
     }
