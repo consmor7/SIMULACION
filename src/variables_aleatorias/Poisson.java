@@ -22,7 +22,7 @@ public class Poisson {
 
        int ultimoIndice = 0;
        //Ciclo externo, para generar 100 variables Poisson.
-        for (int k = 0; k < 100; k++) {
+        for (int k = 0; k < 8; k++) {
         to = 0; //Se reinicia To con el fin de generar nuevamente Ti
         poisson = 0;//Se reinicia la variable poisson con el fin de obtener una nueva
         stop = false;
@@ -32,7 +32,7 @@ public class Poisson {
         //Formula a usar 
         ti = (float) (to - (1.0/40.0) * Math.log(numeros[i]));
         //Imprimir ti para ver el comportamiento
-       System.out.println("numero aleatorio usado:   "+numeros[i]+"  valor ti: "+ti);
+       System.out.println(ti);
         //Si ti es menor que 1 entonces le pasa el valor a to y la variable aleatoria aumenta un valor.
         if (ti <= limite) {
             to = ti;
@@ -50,7 +50,7 @@ public class Poisson {
         ultimoIndice = numeros.length; // Si no se detuvo, significa que se utilizaron todos los números.
     }
     //Imprime la variable Poisson.
-    System.out.println("Variable poisson "+ (k+1) + ": "+ poisson);
+   // System.out.println("Variable poisson "+ (k+1) + ": "+ poisson);
            // System.out.println(poisson);
 }
 
