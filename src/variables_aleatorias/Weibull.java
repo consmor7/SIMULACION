@@ -1,4 +1,4 @@
-
+package variables_aleatorias;
 import variables_aleatorias.LectorArchivo;
 
 public class Weibull {
